@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">WD_Technology</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">资讯</string>
+    <string name="title_dashboard">消息</string>
+    <string name="title_notifications">社区</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_class">drawer_class</string>
 </resources>

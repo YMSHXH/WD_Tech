@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_background"
+        tools:context=".activity.LoginActivity">
+
+    <EditText
+            android:id="@+id/login_phone"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="150dp"
+            android:hint="手机号"
+            android:textColorHint="#eeeeee"
+            android:textSize="18sp"
+            android:paddingLeft="50dp"
+            android:paddingBottom="@dimen/dp_10"
+            android:textColor="#eeeeee"
+            android:background="@null"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1AFFFFFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_phone"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"/>
+
+    <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/login_icon_phone"
+            app:layout_constraintLeft_toLeftOf="@+id/login_phone"
+            app:layout_constraintTop_toTopOf="@+id/login_phone"/>
+
+
+    <EditText
+            android:id="@+id/login_pwd"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_phone"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="30dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textColorHint="#eeeeee"
+            android:textSize="18sp"
+            android:paddingLeft="50dp"
+            android:paddingBottom="@dimen/dp_10"
+            android:textColor="#eeeeee"
+            android:background="@null"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1AFFFFFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_pwd"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"/>
+
+    <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/login_icon_lock"
+            app:layout_constraintLeft_toLeftOf="@+id/login_pwd"
+            app:layout_constraintTop_toTopOf="@+id/login_pwd"/>
+
+    <CheckBox
+            android:id="@+id/login_toshow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:button="@mipmap/login_icon_eye_n"
+            app:layout_constraintRight_toRightOf="@+id/login_pwd"
+            app:layout_constraintTop_toTopOf="@+id/login_pwd"
+            app:layout_constraintBottom_toBottomOf="@+id/login_pwd"
+    />
+
+
+
+    <TextView
+            android:id="@+id/login_fast_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="快速注册"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintTop_toBottomOf="@+id/login_pwd"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/dp_40"/>
+
+
+    <Button
+            android:id="@+id/login_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/login_text3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:textSize="18sp"
+            android:text="登录"
+            android:background="@drawable/shape_login_but"
+            android:textColor="#FFFFFF"/>
+
+
+    <TextView
+            android:id="@+id/login_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三方账号快捷登录"
+            android:textSize="@dimen/dp_10"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="80dp"/>
+
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/login_text3"
+            app:layout_constraintTop_toTopOf="@+id/login_text3"
+            app:layout_constraintBottom_toBottomOf="@+id/login_text3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="5dp"/>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"
+            app:layout_constraintLeft_toRightOf="@+id/login_text3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/login_text3"
+            app:layout_constraintBottom_toBottomOf="@+id/login_text3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/dp_40"/>
+
+</android.support.constraint.ConstraintLayout>
